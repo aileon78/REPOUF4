@@ -36,11 +36,13 @@
             // 
             // RTB1
             // 
-            this.RTB1.Location = new System.Drawing.Point(75, 34);
+            this.RTB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RTB1.Location = new System.Drawing.Point(12, 59);
             this.RTB1.Name = "RTB1";
-            this.RTB1.Size = new System.Drawing.Size(132, 167);
+            this.RTB1.Size = new System.Drawing.Size(260, 107);
             this.RTB1.TabIndex = 0;
             this.RTB1.Text = "";
+            this.RTB1.TextChanged += new System.EventHandler(this.RTB1_TextChanged);
             // 
             // BTVolver
             // 
@@ -54,9 +56,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::LibroAutor.Properties.Resources.autores;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 236);
+            this.pictureBox1.Size = new System.Drawing.Size(284, 261);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 

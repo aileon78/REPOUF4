@@ -100,9 +100,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="pictures\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="pictures\autores.jpg" />
   </ItemGroup>
   <ItemGroup>

@@ -68,5 +68,10 @@ namespace LibroAutor
             mostrar(aut);
 
         }
+
+        private void RTB1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

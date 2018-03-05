@@ -93,10 +93,10 @@
             // 
             // BTGuardar
             // 
-            this.BTGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTGuardar.Location = new System.Drawing.Point(34, 220);
             this.BTGuardar.Name = "BTGuardar";
-            this.BTGuardar.Size = new System.Drawing.Size(75, 23);
+            this.BTGuardar.Size = new System.Drawing.Size(93, 39);
             this.BTGuardar.TabIndex = 6;
             this.BTGuardar.Text = "&Guardar";
             this.BTGuardar.UseVisualStyleBackColor = true;
@@ -104,10 +104,10 @@
             // 
             // BTVolver
             // 
-            this.BTVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTVolver.Location = new System.Drawing.Point(201, 220);
+            this.BTVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTVolver.Location = new System.Drawing.Point(179, 220);
             this.BTVolver.Name = "BTVolver";
-            this.BTVolver.Size = new System.Drawing.Size(75, 23);
+            this.BTVolver.Size = new System.Drawing.Size(97, 39);
             this.BTVolver.TabIndex = 7;
             this.BTVolver.Text = "&Volver";
             this.BTVolver.UseVisualStyleBackColor = true;

@@ -53,6 +53,12 @@
     </Compile>
     <Compile Include="Clases\Autor.cs" />
     <Compile Include="Clases\Libro.cs" />
+    <Compile Include="FAgregarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAgregarLibro.Designer.cs">
+      <DependentUpon>FAgregarLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FMostrarAutor.cs">
       <SubType>Form</SubType>
     </Compile>

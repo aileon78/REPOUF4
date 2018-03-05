@@ -24,5 +24,12 @@ namespace LibroAutor
             FMostrarAutor mostrar = new FMostrarAutor();
             mostrar.Show();
         }
+
+        private void añadirLibroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FAgregarLibro mostrar = new FAgregarLibro();
+            mostrar.Show();
+        }
     }
 }

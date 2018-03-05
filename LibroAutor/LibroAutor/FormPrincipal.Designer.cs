@@ -63,13 +63,14 @@
             // añadirLibroToolStripMenuItem
             // 
             this.añadirLibroToolStripMenuItem.Name = "añadirLibroToolStripMenuItem";
-            this.añadirLibroToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.añadirLibroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.añadirLibroToolStripMenuItem.Text = "Añadir Libro";
+            this.añadirLibroToolStripMenuItem.Click += new System.EventHandler(this.añadirLibroToolStripMenuItem_Click);
             // 
             // mostrarLibroToolStripMenuItem
             // 
             this.mostrarLibroToolStripMenuItem.Name = "mostrarLibroToolStripMenuItem";
-            this.mostrarLibroToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.mostrarLibroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mostrarLibroToolStripMenuItem.Text = "Mostrar Libro";
             // 
             // autorToolStripMenuItem
@@ -84,14 +85,14 @@
             // añadirAutorToolStripMenuItem
             // 
             this.añadirAutorToolStripMenuItem.Name = "añadirAutorToolStripMenuItem";
-            this.añadirAutorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.añadirAutorToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.añadirAutorToolStripMenuItem.Text = "Añadir autor";
             this.añadirAutorToolStripMenuItem.Click += new System.EventHandler(this.añadirAutorToolStripMenuItem_Click);
             // 
             // mostrarAutorToolStripMenuItem
             // 
             this.mostrarAutorToolStripMenuItem.Name = "mostrarAutorToolStripMenuItem";
-            this.mostrarAutorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mostrarAutorToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.mostrarAutorToolStripMenuItem.Text = "Mostrar autor";
             this.mostrarAutorToolStripMenuItem.Click += new System.EventHandler(this.mostrarAutorToolStripMenuItem_Click);
             // 

@@ -31,5 +31,12 @@ namespace LibroAutor
             FAgregarLibro mostrar = new FAgregarLibro();
             mostrar.Show();
         }
+
+        private void mostrarLibroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FMostrarLibros mostrar = new FMostrarLibros();
+            mostrar.Show();
+        }
     }
 }

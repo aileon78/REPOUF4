@@ -65,6 +65,12 @@
     <Compile Include="FMostrarAutor.Designer.cs">
       <DependentUpon>FMostrarAutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMostrarLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMostrarLibros.Designer.cs">
+      <DependentUpon>FMostrarLibros.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,8 +82,14 @@
     <EmbeddedResource Include="FAgregarAutor.resx">
       <DependentUpon>FAgregarAutor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FAgregarLibro.resx">
+      <DependentUpon>FAgregarLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FMostrarAutor.resx">
       <DependentUpon>FMostrarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMostrarLibros.resx">
+      <DependentUpon>FMostrarLibros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>

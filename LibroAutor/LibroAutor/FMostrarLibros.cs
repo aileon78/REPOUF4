@@ -1,19 +1,12 @@
 ﻿using LibroAutor.Clases;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LibroAutor
 {
-    public partial class FMostrarAutor : Form
+    public partial class FMostrarLibros : Form
     {
-        public FMostrarAutor()
+        public FMostrarLibros()
         {
             InitializeComponent();
         }
@@ -25,6 +18,7 @@ namespace LibroAutor
 
             mostrar.Show();
         }
+
 
         private int contaVector(Object[] obj)
         {
@@ -39,9 +33,8 @@ namespace LibroAutor
 
             return i;
         }
-
-
-        private void mostrar(Autor[] aut) {
+        private void mostrar(Libro[] aut)
+        {
 
             int i;
             int maxAut = contaVector(aut);
@@ -53,27 +46,23 @@ namespace LibroAutor
 
 
         }
-        private void mostrarAutor(Autor a)
+        private void mostrarAutor(Libro a)
         {
-            RTB1.Text=RTB1.Text + "\nNombre: "+ a.Nom+"\nApellido: "+a.Cognom+"\nEdad: "+a.Edad+"\n\n";
+            RTBMostrarLibro.Text = RTBMostrarLibro.Text + "\nTitulo Libro: " + a.Titulo + "\nISBN: " + a.Isbn + "\nAutor :\n  -Nom Autor :" + a.Aut.Nom + "\n  -Cognom Autor: " + a.Aut.Cognom + "\n  -Edad Autor:" + a.Aut.Edad + "\n----------------------------------------------------\n";
 
         }
 
 
-        private void FMostrarAutor_Load(object sender, EventArgs e)
+        private void FMostrarLibros_Load(object sender, EventArgs e)
         {
-            Autor[] aut = new Autor[100];
-            Autor a = new Autor();
+            Libro[] aut = new Libro[100];
+            Libro a = new Libro();
 
 
-            aut = a.llegirObjecteAutorFitxer();
+            aut = a.llegirObjecteLibroFitxer();
+
+
             mostrar(aut);
-
-        }
-
-        private void RTB1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

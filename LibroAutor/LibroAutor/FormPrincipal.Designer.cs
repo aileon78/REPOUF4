@@ -72,6 +72,7 @@
             this.mostrarLibroToolStripMenuItem.Name = "mostrarLibroToolStripMenuItem";
             this.mostrarLibroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mostrarLibroToolStripMenuItem.Text = "Mostrar Libro";
+            this.mostrarLibroToolStripMenuItem.Click += new System.EventHandler(this.mostrarLibroToolStripMenuItem_Click);
             // 
             // autorToolStripMenuItem
             // 

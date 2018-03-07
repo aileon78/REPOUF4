@@ -52,7 +52,11 @@ namespace LibroAutor
 
         }
 
-
+        /// <summary>
+        /// /
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FMostrarLibros_Load(object sender, EventArgs e)
         {
             Libro[] aut = new Libro[100];

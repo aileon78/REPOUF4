@@ -46,10 +46,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Escuderia.cs" />
-    <Compile Include="FormMostrarEsc.cs">
+    <Compile Include="FormularisEscuderias\FEliminarEsc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMostrarEsc.Designer.cs">
+    <Compile Include="FormularisEscuderias\FEliminarEsc.Designer.cs">
+      <DependentUpon>FEliminarEsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisEscuderias\FModificarEsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisEscuderias\FModificarEsc.Designer.cs">
+      <DependentUpon>FModificarEsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisEscuderias\FormMostrarEsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisEscuderias\FormMostrarEsc.Designer.cs">
       <DependentUpon>FormMostrarEsc.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
@@ -58,21 +70,27 @@
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAfegirEscuderia.cs">
+    <Compile Include="FormularisEscuderias\FormAfegirEscuderia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAfegirEscuderia.Designer.cs">
+    <Compile Include="FormularisEscuderias\FormAfegirEscuderia.Designer.cs">
       <DependentUpon>FormAfegirEscuderia.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMostrarEsc.resx">
+    <EmbeddedResource Include="FormularisEscuderias\FEliminarEsc.resx">
+      <DependentUpon>FEliminarEsc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisEscuderias\FModificarEsc.resx">
+      <DependentUpon>FModificarEsc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisEscuderias\FormMostrarEsc.resx">
       <DependentUpon>FormMostrarEsc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAfegirEscuderia.resx">
+    <EmbeddedResource Include="FormularisEscuderias\FormAfegirEscuderia.resx">
       <DependentUpon>FormAfegirEscuderia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

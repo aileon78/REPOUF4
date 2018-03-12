@@ -25,7 +25,7 @@ namespace GranPremiVictorCasa
             Escuderia[] esc = new Escuderia[100];
             Escuderia es = new Escuderia();
             //String fitxer = "fitxer/llibres.dat";
-            esc = es.llegirFitxerEscuderies();
+            esc = es.llegeixFitxerEscuderia();
             int i = 0;
             do
             {

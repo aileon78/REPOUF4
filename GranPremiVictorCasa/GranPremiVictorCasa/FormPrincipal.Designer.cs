@@ -33,6 +33,7 @@
             this.afegirEscuderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarEscuderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarEscueriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mostrarEscuderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -55,6 +56,7 @@
             this.afegirEscuderiaToolStripMenuItem,
             this.modificarEscuderiaToolStripMenuItem,
             this.eliminarEscueriaToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.mostrarEscuderiaToolStripMenuItem});
             this.escuderiasToolStripMenuItem.Name = "escuderiasToolStripMenuItem";
             this.escuderiasToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
@@ -72,12 +74,19 @@
             this.modificarEscuderiaToolStripMenuItem.Name = "modificarEscuderiaToolStripMenuItem";
             this.modificarEscuderiaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.modificarEscuderiaToolStripMenuItem.Text = "Modificar Escuderia";
+            this.modificarEscuderiaToolStripMenuItem.Click += new System.EventHandler(this.modificarEscuderiaToolStripMenuItem_Click);
             // 
             // eliminarEscueriaToolStripMenuItem
             // 
             this.eliminarEscueriaToolStripMenuItem.Name = "eliminarEscueriaToolStripMenuItem";
             this.eliminarEscueriaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.eliminarEscueriaToolStripMenuItem.Text = "Eliminar Escueria";
+            this.eliminarEscueriaToolStripMenuItem.Click += new System.EventHandler(this.eliminarEscueriaToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(175, 6);
             // 
             // mostrarEscuderiaToolStripMenuItem
             // 
@@ -104,6 +113,8 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
             this.Text = "F1 2018";
@@ -124,6 +135,7 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarEscueriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mostrarEscuderiaToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
     }
 }
 

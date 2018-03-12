@@ -38,26 +38,37 @@ namespace GranPremiVictorCasa.Clases
 
         //RESTA DE Mètodes
 
-            /// <summary>
-            /// PARA AÑADIR ESCUDERIAS
-            /// </summary>
-            /// <param name="fitxer"></param>
-            /// <param name="afegir"></param>
-        public void afegeixFitxerEscuderia(String fitxer = "fitxer/escuderia.dat", bool afegir = true)
+        private FileMode modeFitxer(Boolean afegir)
+        {
+            if (!afegir)
+                return FileMode.Create;
+            else
+                return FileMode.Append;
+        }
+
+
+        /// <summary>
+        /// PARA AÑADIR ESCUDERIAS
+        /// </summary>
+        /// <param name="fitxer"></param>
+        /// <param name="afegir"></param>
+        public void afegeixFitxerEscuderia( bool afegir = true,String fitxer = "fitxer/escuderia.dat")
         {
 
             // Per poder utilitzar el paràmetre boolea afegir
-            FileMode apertura = new FileMode();
+            //FileMode apertura = new FileMode();
 
-            if (afegir)
-                apertura = FileMode.Append;
-            else
-                apertura = FileMode.Create;
-
+            //if (afegir)
+            //    apertura = FileMode.Append;
+            //else
+            //    apertura = FileMode.Create;
+            FileMode mode = modeFitxer(afegir);
 
             //Stream str = File.Open(fitxer, FileMode.Append);
-            Stream str = File.Open(fitxer, apertura);
+            //Stream str = File.Open(fitxer, apertura);
 
+
+            Stream str = File.Open(fitxer, mode);
 
             var formatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
             formatter.Serialize(str, this);
@@ -69,7 +80,7 @@ namespace GranPremiVictorCasa.Clases
         /// </summary>
         /// <param name="arxiu"></param>
         /// <returns></returns>
-        public Escuderia[] llegirFitxerEscuderies(String arxiu = "fitxer/escuderia.dat")
+        public Escuderia[] llegeixFitxerEscuderia(String arxiu = "fitxer/escuderia.dat")
         {
             // //////////////////////// //
             // LLEGIR OBJECTE EN FITXER //
@@ -96,23 +107,72 @@ namespace GranPremiVictorCasa.Clases
             return esc;
         }
 
+
+        //CONTAREMOS LAS ESCUDERIAS DE DENTRO DEL FICHERO
+        public int contaEscuderies()
+        {
+            int total = 0;
+
+            Escuderia[] esc = new Escuderia[100];
+
+            // llegim totes les escuderies
+            esc = llegeixFitxerEscuderia();
+
+            // busquem la escuderia
+            while (esc[total] != null)
+            {
+                total++;
+            }
+            return total;
+        }
+
+
+        //MODIFICAREMOS LAS ESCUDERIAS
+        public void modificarEscuderia()
+        {
+
+            // llegim totes les escuderies
+            Escuderia[] esc = llegeixFitxerEscuderia();
+
+            int i = 0;
+
+            // busquem la escuderia
+            do
+            {
+                // quant trobem la que volem borrar no la reescrivim
+                if (esc[i].NomEsc.Equals(this.NomEsc))
+                {
+                    // La eliminem
+                    eliminaEscuderia(esc[i].NomEsc);
+                    // Afegim la nova escuderia
+                    this.afegeixFitxerEscuderia();
+                }
+                i++;
+            } while (esc[i] != null);
+
+
+        }
+
+
+
         /// <summary>
         /// PARA BUSCAR LA ESCUDERIA Y RETORNARLA
         /// </summary>
         /// <param name="nomAutor"></param>
         /// <param name="fitxer"></param>
         /// <returns></returns>
-        public Escuderia cercarAutor(String nomEsc, String fitxer = "fitxer/escuderia.dat")
+        public Escuderia cercarEscuderia(String nomEsc, String fitxer = "fitxer/escuderia.dat")
         {
             // retorna un objecte autor si el troba
             // en cas que no trobe res torna un null
 
             Escuderia[] esc = new Escuderia[100];
+
+            // leemos todas las escuderias
+            esc = llegeixFitxerEscuderia();
+
             int i = 0;
-
-            // llegim el fitxer d'autors
-            esc = llegirFitxerEscuderies(fitxer);
-
+            //buscamos la escuderia
             do
             {
                 if (esc[i].NomEsc.Equals(nomEsc))
@@ -120,6 +180,75 @@ namespace GranPremiVictorCasa.Clases
                 i++;
             } while (esc[i] != null);
             return null;
+
+
+
+        }
+
+        public void eliminaEscuderia(String nom_esc)
+        {
+            Escuderia[] esc = new Escuderia[100];
+
+            // llegim totes les escuderies
+            esc = llegeixFitxerEscuderia();
+
+            int i = 0;
+            // per comprovar la primera escriptura
+            Boolean primer = true;
+
+            // busquem la escuderia
+            do
+            {
+                // quant trobem la que volem borrar no la reescrivim
+                if (!esc[i].NomEsc.Equals(nom_esc))
+                {
+                    if (primer)
+                    {
+                        // generem fitxer nou
+                        esc[i].afegeixFitxerEscuderia(false);
+                        primer = false;
+                    }
+                    else
+                    {
+                        // afegim al fitxer
+                        esc[i].afegeixFitxerEscuderia(true);
+                    }
+                }
+                i++;
+            } while (esc[i] != null);
+        }
+
+
+        public void eliminaEscuderia()
+        {
+            Escuderia[] esc = new Escuderia[100];
+
+            // llegim totes les escuderies
+            esc = llegeixFitxerEscuderia();
+
+            int i = 0;
+            Boolean primer = true;      // per comprovar la primera escriptura
+
+            // busquem la escuderia
+            do
+            {
+                // quant trobem la que volem borrar no la reescrivim
+                if (this.Equals(esc[i]))
+                {
+                    if (primer)
+                    {
+                        // generem fitxer nou
+                        esc[i].afegeixFitxerEscuderia(false);
+                        primer = false;
+                    }
+                    else
+                    {
+                        // afegim al fitxer
+                        esc[i].afegeixFitxerEscuderia(true);
+                    }
+                }
+                i++;
+            } while (esc[i] != null);
         }
 
 

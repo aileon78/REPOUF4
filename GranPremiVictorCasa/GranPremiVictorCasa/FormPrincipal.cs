@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GranPremiVictorCasa.FormularisEscuderias;
+using System;
 using System.Windows.Forms;
 
 namespace GranPremiVictorCasa
@@ -30,6 +24,21 @@ namespace GranPremiVictorCasa
             FormMostrarEsc mostrar = new FormMostrarEsc();
             mostrar.Show();
 
+        }
+
+        private void eliminarEscueriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            
+            FEliminarEsc mostrar = new FEliminarEsc();
+            mostrar.Show();
+        }
+
+        private void modificarEscuderiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FModificarEsc mostrar = new FModificarEsc();
+            mostrar.Show();
         }
     }
 }

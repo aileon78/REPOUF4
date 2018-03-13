@@ -53,9 +53,19 @@ namespace GranPremiVictorCasa
             TBAnyFun.Text = "";
             TBMotor.Text = "";
         }
+        //private void tanca()
+        //{
+        //    FormPrincipal principal = new FormPrincipal();
+        //    principal.Show();
+        //}
+        //private void FormAfegirEscuderia_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    tanca();
+        //}
 
+        private void FormAfegirEscuderia_Load(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }

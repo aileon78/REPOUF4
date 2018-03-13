@@ -142,5 +142,9 @@ namespace GranPremiVictorCasa.FormularisEscuderias
 
         }
 
+        private void TBModPaisEsc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

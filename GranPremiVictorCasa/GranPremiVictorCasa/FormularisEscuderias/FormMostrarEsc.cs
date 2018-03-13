@@ -49,6 +49,7 @@ namespace GranPremiVictorCasa
             this.Close();
             FormPrincipal mostraprincipal = new FormPrincipal();
             mostraprincipal.Show();
+
         }
     }
 }

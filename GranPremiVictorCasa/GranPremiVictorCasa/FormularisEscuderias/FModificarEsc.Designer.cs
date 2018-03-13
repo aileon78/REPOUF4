@@ -100,6 +100,7 @@
             this.TBModPaisEsc.Name = "TBModPaisEsc";
             this.TBModPaisEsc.Size = new System.Drawing.Size(100, 20);
             this.TBModPaisEsc.TabIndex = 6;
+            this.TBModPaisEsc.TextChanged += new System.EventHandler(this.TBModPaisEsc_TextChanged);
             // 
             // TBModMotorEsc
             // 

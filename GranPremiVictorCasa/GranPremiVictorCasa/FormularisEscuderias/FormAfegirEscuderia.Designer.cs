@@ -142,6 +142,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormAfegirEscuderia";
             this.Text = "FormAfegirEscuderia";
+            this.Load += new System.EventHandler(this.FormAfegirEscuderia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

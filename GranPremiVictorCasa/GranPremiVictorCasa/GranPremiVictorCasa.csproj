@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Escuderia.cs" />
+    <Compile Include="Clases\pilot.cs" />
     <Compile Include="FormularisEscuderias\FEliminarEsc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,30 @@
     <Compile Include="FormularisEscuderias\FormAfegirEscuderia.Designer.cs">
       <DependentUpon>FormAfegirEscuderia.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularisPilots\FAfegeixPilot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilots\FAfegeixPilot.Designer.cs">
+      <DependentUpon>FAfegeixPilot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisPilots\FEliminaPilot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilots\FEliminaPilot.Designer.cs">
+      <DependentUpon>FEliminaPilot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisPilots\FModificarPilot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilots\FModificarPilot.Designer.cs">
+      <DependentUpon>FModificarPilot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisPilots\FMostrarPilots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilots\FMostrarPilots.Designer.cs">
+      <DependentUpon>FMostrarPilots.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularisEscuderias\FEliminarEsc.resx">
@@ -92,6 +117,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularisEscuderias\FormAfegirEscuderia.resx">
       <DependentUpon>FormAfegirEscuderia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilots\FAfegeixPilot.resx">
+      <DependentUpon>FAfegeixPilot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilots\FEliminaPilot.resx">
+      <DependentUpon>FEliminaPilot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilots\FModificarPilot.resx">
+      <DependentUpon>FModificarPilot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilots\FMostrarPilots.resx">
+      <DependentUpon>FMostrarPilots.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,5 +156,6 @@
   <ItemGroup>
     <None Include="bin\Debug\fitxer\gp.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

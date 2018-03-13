@@ -35,6 +35,12 @@
             this.eliminarEscueriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mostrarEscuderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pilotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.afegeixPilotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificaPilotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminaPilotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.mostrarPilotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,6 +49,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pilotsToolStripMenuItem,
             this.escuderiasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -95,6 +102,51 @@
             this.mostrarEscuderiaToolStripMenuItem.Text = "Mostrar Escuderia";
             this.mostrarEscuderiaToolStripMenuItem.Click += new System.EventHandler(this.mostrarEscuderiaToolStripMenuItem_Click);
             // 
+            // pilotsToolStripMenuItem
+            // 
+            this.pilotsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.afegeixPilotToolStripMenuItem,
+            this.modificaPilotToolStripMenuItem,
+            this.eliminaPilotToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.mostrarPilotsToolStripMenuItem});
+            this.pilotsToolStripMenuItem.Name = "pilotsToolStripMenuItem";
+            this.pilotsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.pilotsToolStripMenuItem.Text = "Pilots";
+            // 
+            // afegeixPilotToolStripMenuItem
+            // 
+            this.afegeixPilotToolStripMenuItem.Name = "afegeixPilotToolStripMenuItem";
+            this.afegeixPilotToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.afegeixPilotToolStripMenuItem.Text = "Afegeix Pilot";
+            this.afegeixPilotToolStripMenuItem.Click += new System.EventHandler(this.afegeixPilotToolStripMenuItem_Click);
+            // 
+            // modificaPilotToolStripMenuItem
+            // 
+            this.modificaPilotToolStripMenuItem.Name = "modificaPilotToolStripMenuItem";
+            this.modificaPilotToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.modificaPilotToolStripMenuItem.Text = "Modifica Pilot";
+            this.modificaPilotToolStripMenuItem.Click += new System.EventHandler(this.modificaPilotToolStripMenuItem_Click);
+            // 
+            // eliminaPilotToolStripMenuItem
+            // 
+            this.eliminaPilotToolStripMenuItem.Name = "eliminaPilotToolStripMenuItem";
+            this.eliminaPilotToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eliminaPilotToolStripMenuItem.Text = "Elimina Pilot";
+            this.eliminaPilotToolStripMenuItem.Click += new System.EventHandler(this.eliminaPilotToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
+            // 
+            // mostrarPilotsToolStripMenuItem
+            // 
+            this.mostrarPilotsToolStripMenuItem.Name = "mostrarPilotsToolStripMenuItem";
+            this.mostrarPilotsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mostrarPilotsToolStripMenuItem.Text = "Mostrar Pilots";
+            this.mostrarPilotsToolStripMenuItem.Click += new System.EventHandler(this.mostrarPilotsToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -114,7 +166,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
             this.Text = "F1 2018";
@@ -136,6 +187,12 @@
         private System.Windows.Forms.ToolStripMenuItem mostrarEscuderiaToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pilotsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem afegeixPilotToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificaPilotToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminaPilotToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem mostrarPilotsToolStripMenuItem;
     }
 }
 
